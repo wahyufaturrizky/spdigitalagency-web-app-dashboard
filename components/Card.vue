@@ -7,7 +7,10 @@
     ]"
   >
     <div class="flex flex-row justify-between items-center">
-      <Text class="text-lg font-normal" :label="itemCard.label" /> <MoreOutlined />
+      <Text class="text-lg font-normal" :label="itemCard.label" />
+      <MoreOutlined v-if="itemCard.label === 'Revenue in Percentage'" />
+      <Image v-else-if="itemCard.label === 'Total Order'" src="/bookmark.png" />
+      <Image v-else src="/mail.png" />
     </div>
 
     <Text
