@@ -126,7 +126,7 @@ const columns: TableColumnType<DataType>[] = [
     title: "About",
     dataIndex: "about",
     key: "about",
-    responsive: ["lg"],
+    responsive: ["xl"],
   },
   {
     title: "",
