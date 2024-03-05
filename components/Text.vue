@@ -2,8 +2,6 @@
   <p :class="class">{{ label }}</p>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 defineProps(["label", "class"]);
 </script>
-
-<style scoped></style>

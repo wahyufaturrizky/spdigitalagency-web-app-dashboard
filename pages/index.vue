@@ -34,24 +34,17 @@
             />
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-            <div class="p-4 border border-gray-400 rounded-md bg-white">
-              <div class="flex flex-row justify-between items-center">
-                <Text class="text-lg font-normal" label="asdasd" /> <MoreOutlined />
-              </div>
-
-              <div class="flex items-center gap-1.5">
-                <ArrowUpOutlined class="text-green-400" />
-                <Text class="font-normal text-xs text-green-400" label="40%" />
-                <Text class="font-normal text-xs text-green-400" label="vs last " />
-              </div>
-            </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+            <!-- Start Card -->
+            <Card
+              v-for="itemCard in useCardList().value"
+              :itemCard="itemCard"
+              :key="itemCard.label"
+            />
+            <!-- End Card -->
           </div>
         </div>
       </a-layout-content>
-      <a-layout-footer style="text-align: center">
-        Ant Design ©2018 Created by Ant UED
-      </a-layout-footer>
     </a-layout>
   </a-layout>
 </template>
@@ -68,8 +61,6 @@ import {
   UserOutlined,
   UsergroupAddOutlined,
 } from "@ant-design/icons-vue";
-
-const counter = useState("counter", () => 0);
 
 const onCollapse = (collapsed: boolean, type: string) => {
   console.log(collapsed, type);
