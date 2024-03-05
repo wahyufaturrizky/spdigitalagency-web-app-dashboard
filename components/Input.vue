@@ -8,7 +8,7 @@
       v-if="prefixIcon"
       class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
     >
-      {{ prefixIcon }}
+      <slot name="prefixIcon"></slot>
     </div>
 
     <div :class="[label ? 'mt-2' : 'mt-0']">
@@ -20,7 +20,7 @@
         :name="name"
         :autocomplete="autocomplete"
         :required="required"
-        v-model="name"
+        :v-model="name"
       />
     </div>
 
@@ -33,7 +33,7 @@
         'right-0 flex items-center mr-3 cursor-pointer inset-y-0',
       ]"
     >
-      {{ suffixIcon }}
+      <slot name="suffixIcon"></slot>
     </div>
   </div>
 </template>
