@@ -1,5 +1,9 @@
 # Nuxt 3 Minimal Starter
 
+DEMO SITE: https://spdigitalagency-web-app-dashboard.vercel.app/
+
+AUTHOR: https://www.linkedin.com/in/wahyu-fatur-rizky/
+
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
