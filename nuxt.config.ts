@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: ["@ant-design-vue/nuxt", "@nuxt/image"],
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
   postcss: {
@@ -7,5 +8,11 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+  image: {
+    // Options
+  },
+  imports: {
+    dirs: ["composables/**"],
   },
 });

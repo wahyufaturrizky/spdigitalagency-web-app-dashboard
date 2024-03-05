@@ -1,3 +1,11 @@
 <template>
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <NuxtPage />
 </template>
+
+<style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+</style>
